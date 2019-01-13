@@ -3,6 +3,9 @@
 
 #include "stdafx.h"
 #include "StartWachat.h"
+#include "MiniDump.h"
+
+CMiniDumper G_MD;
 
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -28,5 +31,6 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
 		FreeLibrary(hModule);
 		hModule = NULL;
 	}
+
 	return 0;
 }
